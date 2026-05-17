@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deuzenias da Costa | Portfólio de Logística e Compras</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        
+        <style>
+            /* Estilos customizados rápidos */
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f8f9fa;
+            }
+            .hero-section {
+                background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+                color: white;
+                padding: 100px 0;
+            }
+            .section-title {
+                position: relative;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                font-weight: bold;
+                color: #2c5364;
+            }
+            .section-title::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 50px;
+                height: 3px;
+                background-color: #0d6efd;
+            }
+            .timeline-card {
+                border-left: 4px solid #0d6efd;
+                border-radius: 0;
+                transition: transform 0.3s ease;
+            }
+            .timeline-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+            .skill-badge {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+                margin: 5px;
+                background-color: #e9ecef;
+                color: #2c5364;
+                border: 1px solid #dee2e6;
+            }
+            /* Classe adicionada via JS ao rolar a página */
+            .navbar-scrolled {
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                background-color: rgba(255, 255, 255, 0.95) !important;
+                transition: all 0.3s ease;
+            }
+        </style>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navbarNav">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home" style="color: #2c5364;">DC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Competências</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+                        <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header id="home" class="hero-section text-center text-lg-start mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold">Deuzenias da Costa</h1>
+                        <h2 class="h3 fw-light mb-4 text-info">Assistente de Logística & Auxiliar de Compras</h2>
+                        <p class="lead mb-4">Profissional com sólida experiência em processos de cotação, controle de estoque e eficiência operacional. Focado em resultados e melhoria contínua na cadeia de suprimentos.</p>
+                        <a href="#experiencia" class="btn btn-outline-light btn-lg me-2 mb-2">Ver Experiência</a>
+                        <a href="#contato" class="btn btn-primary btn-lg mb-2">Falar no WhatsApp</a>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block text-center">
+                        <img src="imagem-para-site-pessoal.png" alt="Deuzenias da Costa" class="img-fluid rounded-circle shadow-lg border border-4 border-light">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="sobre" class="py-5">
+            <div class="container py-4">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="fs-5">Atuo na área de compras e suporte administrativo, com vivência prática em processos de cotação, emissão de pedidos, acompanhamento de entregas e controle estratégico de estoque.</p>
+                        <p>Meu foco é garantir o abastecimento adequado e a eficiência operacional das empresas pelas quais passo, através da negociação com fornecedores, conferência rigorosa de notas fiscais e monitoramento de prazos. Sou organizado, analítico e busco sempre otimizar as rotinas do setor.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-light border-0">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-person-badge text-primary"></i> Perfil</h5>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="mb-2"><strong>Idade:</strong> 26 anos</li>
+                                    <li class="mb-2"><strong>Localização:</strong> Jardim das Oliveiras, CE</li>
+                                    <li><strong>Inglês:</strong> Intermediário</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="py-5 bg-white">
+            <div class="container py-4">
+                <h2 class="section-title">Competências Técnicas & Ferramentas</h2>
+                <div class="row text-center mt-4">
+                    <div class="col-12">
+                        <span class="badge rounded-pill skill-badge"><i class="bi bi-box-seam"></i> Gestão de Estoque</span>
+                        <span class="badge rounded-pill skill-badge"><i class="bi bi-cart-check"></i> Processos de Compras</span>
+                        <span class="badge rounded-pill skill-badge"><i class="bi bi-calculator"></i> Cotações e Negociação</span>
+                        <span class="badge rounded-pill skill-badge"><i class="bi bi-file-earmark-spreadsheet"></i> Excel Avançado</span>
+                        <span class="badge rounded-pill skill-badge"><i class="bi bi-receipt"></i> Conferência de Notas Fiscais</span>
+                        <span class="badge rounded-pill skill-badge"><i class="bi bi-clipboard-data"></i> Inventários (PEPS/PVPS)</span>
+                        <span class="badge rounded-pill skill-badge"><i class="bi bi-truck"></i> Monitoramento de Entregas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="py-5 bg-light">
+            <div class="container py-4">
+                <h2 class="section-title">Experiência Profissional</h2>
+                
+                <div class="card mb-4 timeline-card shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h4 class="card-title text-primary mb-0">Assistente de Logística</h4>
+                            <span class="badge bg-secondary">Jan/2025 – Mar/2026</span>
+                        </div>
+                        <h6 class="card-subtitle mb-3 text-muted">Grupo Fornecedora</h6>
+                        <ul class="mb-0">
+                            <li>Suporte no controle de estoque, planejamento de reposição de materiais e organização do fluxo de armazenagem.</li>
+                            <li>Conferência de notas fiscais e verificação de conformidade física e fiscal dos produtos recebidos.</li>
+                            <li>Emissão e acompanhamento de pedidos de compra de insumos logísticos e atualização de cadastro no sistema.</li>
+                            <li>Realização de cotações de fretes e pesquisas de preços de serviços logísticos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4 timeline-card shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h4 class="card-title text-primary mb-0">Auxiliar de Compras</h4>
+                            <span class="badge bg-secondary">Mai/2022 – Dez/2024</span>
+                        </div>
+                        <h6 class="card-subtitle mb-3 text-muted">Grupo Vignoli</h6>
+                        <ul class="mb-0">
+                            <li>Apoio na rotina de compras, controle de requisições internas e acompanhamento do fluxo de aprovação.</li>
+                            <li>Monitoramento de prazos de entrega junto aos fornecedores e alinhamento com a equipe de estoque.</li>
+                            <li>Atualização de preços, tabelas de fornecedores e dados em sistemas internos e planilhas.</li>
+                            <li>Apoio no controle de entrada e saída para identificação de necessidades de novas compras.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4 timeline-card shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h4 class="card-title text-primary mb-0">Aprendiz de Estoque e Estoquista</h4>
+                            <span class="badge bg-secondary">Mar/2019 – Fev/2022</span>
+                        </div>
+                        <h6 class="card-subtitle mb-3 text-muted">Australia Buffet & Grill</h6>
+                        <ul class="mb-0">
+                            <li>Atuação direta na carga, descarga, conferência e movimentação de materiais.</li>
+                            <li>Armazenamento estratégico de produtos e abastecimento dos setores.</li>
+                            <li>Realização de contagens e inventários gerais para auditoria de estoque.</li>
+                            <li>Conferência de notas fiscais de entrada e lançamento de dados em sistemas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="py-5 bg-white">
+            <div class="container py-4">
+                <h2 class="section-title">Formação Acadêmica e Complementar</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-0 bg-light p-3">
+                            <h5 class="text-primary"><i class="bi bi-mortarboard"></i> Superior</h5>
+                            <p class="mb-1 fw-bold">Tecnologia em Logística</p>
+                            <p class="text-muted small">METROPOLITANA | Previsão de Conclusão: Dez/2026</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-0 bg-light p-3">
+                            <h5 class="text-primary"><i class="bi bi-award"></i> Cursos e Certificações</h5>
+                            <ul class="small mb-0">
+                                <li><strong>Operador de Computador c/ Excel Avançado</strong> - CEPEP</li>
+                                <li><strong>Armazenamento e Controle de Estoque</strong> - UDEMY</li>
+                                <li><strong>Logística</strong> - CIEE</li>
+                                <li><strong>Hardware (Montagem e Conserto)</strong> - CEPEP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-5 bg-dark text-white">
+            <div class="container py-4 text-center">
+                <h2 class="mb-4">Vamos conversar?</h2>
+                <p class="lead mb-5">Estou disponível para novas oportunidades. Entre em contato pelos canais abaixo:</p>
+                
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="mailto:dacostadeuzenias@gmail.com" class="text-white text-decoration-none fs-5">
+                        <i class="bi bi-envelope fs-2 d-block mb-2 text-primary"></i> E-mail
+                    </a>
+                    <a href="https://wa.me/5585997124389" target="_blank" class="text-white text-decoration-none fs-5">
+                        <i class="bi bi-whatsapp fs-2 d-block mb-2 text-success"></i> WhatsApp
+                    </a>
+                    <a href="https://linkedin.com/in/deuzenias-da-costa" target="_blank" class="text-white text-decoration-none fs-5">
+                        <i class="bi bi-linkedin fs-2 d-block mb-2 text-info"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-black text-white-50 py-3 text-center">
+            <div class="container">
+                <small>&copy; <span id="currentYear"></span> Deuzenias da Costa. Todos os direitos reservados.</small>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // 1. Atualizar o ano dinamicamente no footer
+                const yearSpan = document.getElementById('currentYear');
+                yearSpan.textContent = new Date().getFullYear();
+
+                // 2. Adicionar sombra na Navbar ao rolar a página (Efeito visual)
+                const navbar = document.getElementById('mainNav');
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('navbar-scrolled');
+                    } else {
+                        navbar.classList.remove('navbar-scrolled');
+                    }
+                });
+
+                // 3. Rolagem suave para links internos (Aprimoramento do comportamento padrão)
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        
+                        if (targetElement) {
+                            // Fecha o menu hamburguer no mobile ao clicar
+                            const navbarToggler = document.querySelector('.navbar-toggler');
+                            const navbarCollapse = document.querySelector('.navbar-collapse');
+                            if (navbarCollapse.classList.contains('show')) {
+                                navbarToggler.click();
+                            }
+
+                            // Calcula a posição considerando a altura da navbar fixa
+                            const navHeight = navbar.offsetHeight;
+                            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                            
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
